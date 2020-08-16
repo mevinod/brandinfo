@@ -8,42 +8,65 @@
 </head>
 <body>
 
-<div class="input-group search-bar">
-  <input type="text" class="form-control search-input" placeholder="Search something.">
-  <button class="btn btn-primary btn-circle search-btn">
-    <i class="search-icon"></i>
-  </button>
-</div>
-<div class="backdrop"></div>
+ <div class="container">
+ 	<header class="header shadow">
+ 		<h1>Filtro em JavaScript com destaque na listagem</h1>
+ 	</header>
 
+ 	<div class="content">
+ 		<form action="#" class="form shadow">
+ 			<input type="text" class="search" placeholder="Filtrar itens" />
+ 		</form>
+
+ 		<ul class="list"></ul>
+ 		 <div class="row">
+			<div class="col-md-4 col-morning">
+				<h2>Morning</h2>
+				<h4>Evangelism Inspiration and Core Training</h4>
+			</div>
+		</div>
+
+ 		<div class="list-results">
+ 			<strong>Resultados da busca</strong>
+ 			<span class="filtered">0</span>
+ 			<strong>de</strong>
+ 			<span class="total">0</span>
+ 		</div>
+
+
+
+
+
+
+
+ 	</div>
+
+ </div>
+ <div class="container">
+
+  	<div class="content">
+ 		<form action="#" class="form shadow">
+ 			<input type="text" class="search" placeholder="Filtrar itens" />
+ 		</form>
+
+ 	</div>
+
+ </div>
 
 <div class="row">
-<div class="col-md-4 col-morning">
-<h2>Morning</h2>
-<h4>Evangelism Inspiration and Core Training</h4>
-</div>
-<div class="col-md-4 col-afternoon">
-<h2>Afternoon</h2>
-<h4>Hands on off campus experience or outreach activity</h4>
-</div>
-<div class="col-md-4 col-evening">
-<h2>Evening</h2>
-<h4>Prayer, worship and additional training</h4>
-</div>
-</div>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<script type="text/babel">
-const searchBar = document.querySelector('.search-bar')
-const searchInput = document.querySelector('.search-input')
-const searchBtn = document.querySelector('.search-btn')
-searchBtn.addEventListener('click', ()=>{
-  if(!searchBar.classList.contains('active')) {
-    searchBar.classList.add('active')
-    searchInput.focus()
-  } else {
-    searchBar.classList.remove('active')
-  }
-})
-</script>
+	<div class="col-md-4 col-morning">
+		<h2>Morning</h2>
+		<h4>Evangelism Inspiration and Core Training</h4>
+	</div>
+	<div class="col-md-4 col-afternoon">
+		<h2>Afternoon</h2>
+		<h4>Hands on off campus experience or outreach activity</h4>
+	</div>
+	<div class="col-md-4 col-evening">
+		<h2>Evening</h2>
+		<h4>Prayer, worship and additional training</h4>
+	</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
 
 </body>

@@ -19,3 +19,135 @@
 }
 
 
+:root {
+   --blue: #250048;
+   --light-blue: #00c1eb;
+   --pink: #f9386a;
+   --gray: #eeeeef;
+   --dark-gray: #888889;
+   --light-gray: #f3f4f4;
+}
+ * {
+   box-sizing: border-box;
+}
+ html, body {
+   font-family: "Roboto", sans-serif;
+   font-size: 14px;
+   height: 100%;
+   margin: 0;
+   min-height: 100vh;
+   padding: 0;
+}
+ .container {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+   width: 100%;
+}
+ .content {
+   height: 100%;
+   margin: 2em auto;
+   max-width: 600px;
+   max-height: calc(100% - 160px);
+   width: 90%;
+}
+ .shadow {
+   box-shadow: 0 7px 14px 0 var(--gray);
+}
+ .header, .footer {
+   text-align: center;
+   width: 100%;
+}
+ .header {
+   background-color: var(--pink);
+   color: #fff;
+}
+ .header h1 {
+   font-size: 18px;
+   font-weight: normal;
+   text-transform: uppercase;
+   word-spacing: 5px;
+}
+ .footer {
+   background-color: var(--light-gray);
+   font-size: 12px;
+}
+ .footer p {
+   margin: 7px;
+}
+ .footer a {
+   color: var(--light-blue);
+}
+ .form {
+   display: block;
+}
+ .search {
+   border: 1px solid var(--gray);
+   padding: 1em;
+   font-size: 14px;
+   display: block;
+   width: 100%;
+}
+ .search:focus {
+   border: 1px solid var(--light-blue);
+   outline: none;
+}
+ .list-results {
+   align-items: center;
+   color: var(--dark-gray);
+   display: flex;
+   font-size: 12px;
+   height: 20px;
+   justify-content: center;
+   margin: 2em 0 1em 0;
+   padding: 0;
+}
+ .list-results strong {
+   display: block;
+   padding: 0 0.5em;
+}
+ .list-results span {
+   display: block;
+   text-align: center;
+   width: 20px;
+}
+ .selected {
+   background-color: var(--pink);
+   color: #fff;
+   display: inline-block;
+   margin: 0 1px;
+   padding: 0 1px;
+}
+ .list {
+   display: grid;
+   gap: 1em;
+   grid-template-columns: repeat(3, 1fr);
+   list-style: none;
+   margin: 2em 0 1em 0;
+   max-height: calc(100% - 105px);
+   overflow: auto;
+   padding: 0;
+}
+ @media screen and (max-width: 570px) {
+   .list {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+ @media screen and (max-width: 390px) {
+   .list {
+     grid-template-columns: 1fr;
+  }
+}
+ .list li {
+   font-size: 12px;
+   border: 1px solid var(--gray);
+   padding: 0.5em 1em;
+   transition: text-indent 0.3s, border 0.3s;
+}
+ .list li:hover {
+   border: 1px solid var(--light-blue);
+   text-indent: 5px;
+}
+ 
